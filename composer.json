@@ -1,12 +1,12 @@
 {
 	"name": "olliewp/ollie",
-	"description": "A WordPress block theme by Mike McAlister",
+	"description": "A Forked WordPress block theme originally by Mike McAlister",
 	"type": "wordpress-theme",
 	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
-			"name": "Mike McAlister",
-			"email": "m@mikemcalister.com"
+			"name": "Ben Weibel",
+			"email": "me@bweib.com"
 		}
 	],
 	"require": {

@@ -1,7 +1,7 @@
 {
-	"name": "Ollie",
+	"name": "Bweib Ollie",
 	"version": "1.0",
-	"description": "Launch a blazing-fast, pixel-perfect website with the Ollie WordPress block theme.",
+	"description": "Fork of the Ollie Theme by Mike McAlister",
 	"scripts": {
 	  "translate:patterns": "node theme-utils.mjs escape-patterns --text-domain=ollie",
 	  "dev": "node theme-utils.mjs watch --text-domain=ollie"
