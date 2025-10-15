@@ -779,7 +779,7 @@
 		"elements": {
 			"button": {
 				"border": {
-					"radius": "5px",
+					"radius": "0",
 					"width": "0"
 				},
 				"color": {
@@ -788,15 +788,16 @@
 				},
 				"spacing": {
 					"padding": {
-						"top": ".6em",
-						"right": "1em",
-						"bottom": ".6em",
-						"left": "1em"
+						"top": ".4em",
+						"right": "1.2em",
+						"bottom": ".4em",
+						"left": "1.2em"
 					}
 				},
 				"typography": {
+					"fontFamily": "Oswald, sans-serif",
 					"fontSize": "var:preset|font-size|small",
-					"fontWeight": "500"
+					"fontWeight": "700"
 				},
 				":hover": {
 					"color": {
@@ -804,7 +805,7 @@
 						"text": "var:preset|color|base"
 					},
 					"typography": {
-						"textDecoration": "underline"
+						"textDecoration": "none"
 					}
 				}
 			},
