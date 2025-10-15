@@ -68,7 +68,15 @@
 --------------------------------------------- */
 
 .wp-block-navigation__responsive-container.is-menu-open.has-modal-open {
+	background: rgba(0,0,0,0.5);
+	backdrop-filter: blur(5px);
 	padding: var(--wp--preset--spacing--medium);
+	height: 100lvh;
+}
+
+button.wp-block-navigation__responsive-container-open {
+    background: var(--wp--preset--color--base);
+    color: var(--wp--preset--color--primary);
 }
 
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
