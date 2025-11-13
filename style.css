@@ -124,6 +124,44 @@ label {
 	opacity: 0.75;
 }
 
+/* Layout and Grid
+---------------------------------------------------------------------------- */
+
+/* Basic One Row Header Layout (Mobile and Scrolling) */
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+
+	--content: min(var(--wp--style--global--wide-size), 100%);
+    display: grid;
+    grid-template-columns:  1fr  var(--content) 1fr  ;
+	grid-template-areas: ". main . ";
+
+	background-color: var(--wp--preset--color--main);
+}
+
+.site-header .header-content {
+	grid-area: main;
+	display: flex;
+	justify-content: space-between;
+	padding-block: var(--wp--preset--spacing--small);
+}
+
+.is-scrolling  .site-header .header-content {
+	padding-block: calc(var(--wp--preset--spacing--small)/2);
+}
+
+.is-scrolling .header-content .wp-block-site-logo {
+	max-width: 100px;
+}
+
+
+.wp-block-navigation {
+    /* grid-area: nav; */
+}
+
+
 /* Helper styles
 ---------------------------------------------------------------------------- */
 

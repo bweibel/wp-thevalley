@@ -11,8 +11,11 @@
  * Inserter: true
  */
 ?>
-<!-- wp:group {"tagName":"header","metadata":{"name":"Site Header"},"className":"site-header","layout":{"type":"constrained"}} -->
-<!-- wp:site-logo /-->
+<!-- wp:group {"metadata":{"name":"Header Content"},"className":"header-content","layout":{"type":"default"}} -->
+<div class="wp-block-group header-content has-global-padding"><!-- wp:site-logo /-->
 
-<!-- wp:navigation {"ref":12,"overlayMenu":"never","className":"getdave-responsive-navigation-block-is-desktop"} /-->
+    <!-- wp:navigation {"ref":12,"overlayMenu":"always","className":"getdave-responsive-navigation-block-is-mobile navigation-mobile"} /-->
+
+    <!-- wp:navigation {"ref":12,"overlayMenu":"never","className":"getdave-responsive-navigation-block-is-desktop navigation-desktop"} /-->
+</div>
 <!-- /wp:group -->
