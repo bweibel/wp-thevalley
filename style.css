@@ -36,6 +36,7 @@ Ollie is distributed under the terms of the GNU GPL.
 
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
@@ -171,6 +172,7 @@ label {
 
 .header-content .wp-block-site-logo {
 	max-width: 200px;
+	margin-bottom: -100px;
 	transition:  0.2s max-width;
 }
 
@@ -227,9 +229,91 @@ a.more-link {
 	flex-shrink: 1 !important;
 }
 
+/* Flex/alignment utility classes */
+.align-self-stretch {
+	align-self: stretch !important;
+}
 
-/* 
-* Global Elements 
+.align-self-center {
+	align-self: center !important;
+}
+
+.align-self-start {
+	align-self: flex-start !important;
+}
+
+.align-self-end {
+	align-self: flex-end !important;
+}
+
+.justify-self-stretch {
+	justify-self: stretch !important;
+}
+
+.justify-self-center {
+	justify-self: center !important;
+}
+
+.justify-self-start {
+	justify-self: start !important;
+}
+
+.justify-self-end {
+	justify-self: end !important;
+}
+
+.max-width-full {
+	max-width: 100% !important;
+}
+
+/* Scroll animations
+---------------------------------------------------------------------------- */
+
+.animate-fade-up,
+.animate-fade-in,
+.animate-slide-left,
+.animate-slide-right,
+.stagger-children > * {
+	opacity: 0;
+	transition: opacity 0.4s ease-out 0.15s, transform 0.4s ease-out 0.15s;
+}
+
+.animate-fade-up {
+	transform: translateY(20px);
+}
+
+.animate-slide-left {
+	transform: translateX(-30px);
+}
+
+.animate-slide-right {
+	transform: translateX(30px);
+}
+
+.animate-fade-up.is-visible,
+.animate-fade-in.is-visible,
+.animate-slide-left.is-visible,
+.animate-slide-right.is-visible,
+.stagger-children > .is-visible {
+	opacity: 1;
+	transform: translate(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.animate-fade-up,
+	.animate-fade-in,
+	.animate-slide-left,
+	.animate-slide-right,
+	.stagger-children > * {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+}
+
+
+/*
+* Global Elements
 */
 
 header:has(>.is-position-sticky) {
@@ -259,5 +343,27 @@ header:has(>.is-position-sticky) {
 
 	header:has(>.ollie-unstick-mobile) {
 		position: static;
+	}
+
+	.no-padding-mobile {
+		padding: 0 !important;
+	}
+
+	.no-padding-left-mobile {
+		padding-left: 0 !important;
+	}
+
+	.no-padding-right-mobile {
+		padding-right: 0 !important;
+	}
+
+	.no-padding-inline-mobile {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.no-padding-block-mobile {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
 	}
 }

@@ -149,21 +149,16 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_woocommerce_styles' 
 function enqueue_theme_scripts() {
 
 	$scripts_base_path = get_template_directory_uri() . '/assets/js/';
-	$scripts = ['navigation.js'];
+	$scripts = ['navigation.js', 'animations.js'];
 
 	foreach ($scripts as $script) {
-	// Register the navigation script
 		$script_path   = $scripts_base_path . $script;
-		$script_handle = 'mytheme-navigation-script';
-		
-		// If you want to add dependencies, include them in this array (e.g., ['jquery'])
-		$dependencies = [];
+		$script_handle = 'thevalley-' . pathinfo($script, PATHINFO_FILENAME);
 
-		// Enqueue the script
 		wp_enqueue_script(
 			$script_handle,
 			$script_path,
-			$dependencies,
+			[],
 			null,
 			true
 		);

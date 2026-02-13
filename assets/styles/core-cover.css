@@ -23,6 +23,18 @@
 	border-radius: 5px;
 }
 
+/* Allows inner blocks to be full bleed */
+.cover-flex .wp-block-cover__inner-container {
+	align-self: stretch;
+	justify-self: stretch;
+	display: flex;
+	max-width: 80rem;
+}
+
+.cover-flex .wp-block-cover__inner-container > * {
+	width: 100%;
+}
+
 @media (max-width: 781px) {
 	.wp-block-cover:not(.has-aspect-ratio) {
 		min-height: 430px !important;
