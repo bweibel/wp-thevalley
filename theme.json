@@ -9,91 +9,35 @@
 			"defaultPalette": false,
 			"duotone": [
 				{
-					"name": "Blue",
-					"slug": "blue",
+					"name": "Forest",
+					"slug": "forest",
 					"colors": [
-						"#462CFF",
-						"#ECE8FF"
+						"#0b3125",
+						"#fefdfa"
 					]
 				},
 				{
-					"name": "Pink",
-					"slug": "Pink",
+					"name": "Sage",
+					"slug": "sage",
 					"colors": [
-						"#F22AAA",
-						"#FFDBF0"
+						"#5b6c53",
+						"#f5f3ee"
 					]
 				},
 				{
-					"name": "Green",
-					"slug": "green",
+					"name": "Gold",
+					"slug": "gold",
 					"colors": [
-						"#196A64",
-						"#E0FFFD"
+						"#0b3125",
+						"#cdab56"
 					]
 				},
 				{
-					"name": "Yellow",
-					"slug": "yellow",
+					"name": "Warm",
+					"slug": "warm",
 					"colors": [
-						"#4B420D",
-						"#FFE465"
-					]
-				},
-				{
-					"name": "Red",
-					"slug": "red",
-					"colors": [
-						"#33120B",
-						"#FF756B"
-					]
-				},
-				{
-					"name": "Teal",
-					"slug": "teal",
-					"colors": [
-						"#233938",
-						"#67EBFF"
-					]
-				},
-				{
-					"name": "Orange",
-					"slug": "orange",
-					"colors": [
-						"#31210D",
-						"#FFA15B"
-					]
-				},
-				{
-					"name": "Punchy",
-					"slug": "punchy",
-					"colors": [
-						"#00007e",
-						"#6aff7e"
-					]
-				},
-				{
-					"name": "Blueberry",
-					"slug": "blueberry",
-					"colors": [
-						"#7f02d3",
-						"#00dbfe"
-					]
-				},
-				{
-					"name": "Lime",
-					"slug": "lime",
-					"colors": [
-						"#02794c",
-						"#fbf01a"
-					]
-				},
-				{
-					"name": "Sunset",
-					"slug": "sunset",
-					"colors": [
-						"#FF3253",
-						"#FFDC53"
+						"#3d4a38",
+						"#f8f0d9"
 					]
 				},
 				{
@@ -107,86 +51,86 @@
 			],
 			"gradients": [
 				{
-					"name": "Purple",
-					"slug": "purple",
-					"gradient": "linear-gradient(135deg, #4D34FA, #ad34fa)"
+					"name": "Forest to Sage",
+					"slug": "forest-sage",
+					"gradient": "linear-gradient(135deg, #0b3125, #5b6c53)"
 				},
 				{
-					"name": "Blue",
-					"slug": "blue",
-					"gradient": "linear-gradient(135deg, #0057FF, #31B5FF)"
+					"name": "Sage to Gold",
+					"slug": "sage-gold",
+					"gradient": "linear-gradient(135deg, #5b6c53, #cdab56)"
 				},
 				{
-					"name": "Pink",
-					"slug": "pink",
-					"gradient": "linear-gradient(135deg, #FF007A, #FF81BD)"
+					"name": "Forest Dark",
+					"slug": "forest-dark",
+					"gradient": "linear-gradient(135deg, #0b3125, #3d5347)"
 				},
 				{
-					"name": "Black",
-					"slug": "black",
-					"gradient": "linear-gradient(135deg, #14111E, #4B4462)"
+					"name": "Gold Warm",
+					"slug": "gold-warm",
+					"gradient": "linear-gradient(135deg, #cdab56, #f8f0d9)"
 				},
 				{
-					"name": "Heat",
-					"slug": "heat",
-					"gradient": "linear-gradient(135deg, #F32758, #FFC581)"
+					"name": "Cream Tint",
+					"slug": "cream-tint",
+					"gradient": "linear-gradient(135deg, #fefdfa, #f5f3ee)"
 				}
 			],
 			"palette": [
 				{
 					"name": "Brand",
 					"slug": "primary",
-					"color": "#5344F4"
+					"color": "#cdab56"
 				},
 				{
 					"name": "Brand Accent",
 					"slug": "primary-accent",
-					"color": "#e9e7ff"
+					"color": "#f8f0d9"
 				},
 				{
 					"name": "Brand Alt",
 					"slug": "primary-alt",
-					"color": "#DEC9FF"
+					"color": "#5b6c53"
 				},
 				{
 					"name": "Brand Alt Accent",
 					"slug": "primary-alt-accent",
-					"color": "#3d386b"
+					"color": "#3d4a38"
 				},
 				{
 					"name": "Contrast",
 					"slug": "main",
-					"color": "#1E1E26"
+					"color": "#0b3125"
 				},
 				{
 					"name": "Contrast Accent",
 					"slug": "main-accent",
-					"color": "#d4d4ec"
+					"color": "#b8c9c2"
 				},
 				{
 					"name": "Base",
 					"slug": "base",
-					"color": "#fff"
+					"color": "#fefdfa"
 				},
 				{
 					"name": "Base Accent",
 					"slug": "secondary",
-					"color": "#545473"
+					"color": "#aab6b1"
 				},
 				{
 					"name": "Tint",
 					"slug": "tertiary",
-					"color": "#f8f7fc"
+					"color": "#f5f3ee"
 				},
 				{
 					"name": "Border Base",
 					"slug": "border-light",
-					"color": "#E3E3F0"
+					"color": "#d4dbd8"
 				},
 				{
 					"name": "Border Contrast",
 					"slug": "border-dark",
-					"color": "#4E4E60"
+					"color": "#3d5347"
 				}
 			],
 			"link": true
@@ -329,58 +273,21 @@
 							"fontStretch": "75% 125%",
 							"fontStyle": "normal",
 							"fontWeight": "300 900",
-							"src": [ "file:./assets/fonts/mona-sans/Mona-Sans.woff2"]
+							"src": ["file:./assets/fonts/mona-sans/Mona-Sans.woff2"]
 						}
 					]
 				},
 				{
-					"fontFamily": "Mona Sans Expanded, sans-serif",
-					"name": "Mona Sans Expanded",
-					"slug": "expanded",
+					"fontFamily": "Big Shoulders Display, sans-serif",
+					"name": "Big Shoulders Display",
+					"slug": "display",
 					"fontFace": [
 						{
-							"fontDisplay": "block",
-							"fontFamily": "Mona Sans Expanded",
-							"fontStretch": "125%",
+							"fontDisplay": "swap",
+							"fontFamily": "Big Shoulders Display",
 							"fontStyle": "normal",
-							"fontWeight": "300 900",
-							"src": [
-								"file:./assets/fonts/mona-sans/Mona-Sans.woff2"
-							]
-						}
-					]
-				},
-				{
-					"fontFamily": "Mona Sans Condensed, sans-serif",
-					"name": "Mona Sans Condensed",
-					"slug": "condensed",
-					"fontFace": [
-						{
-							"fontDisplay": "block",
-							"fontFamily": "Mona Sans Condensed",
-							"fontStretch": "94%",
-							"fontStyle": "normal",
-							"fontWeight": "300 900",
-							"src": [
-								"file:./assets/fonts/mona-sans/Mona-Sans.woff2"
-							]
-						}
-					]
-				},
-				{
-					"fontFamily": "Mona Sans Narrow, sans-serif",
-					"name": "Mona Sans Narrow",
-					"slug": "narrow",
-					"fontFace": [
-						{
-							"fontDisplay": "block",
-							"fontFamily": "Mona Sans Narrow",
-							"fontStretch": "75%",
-							"fontStyle": "normal",
-							"fontWeight": "300 900",
-							"src": [
-								"file:./assets/fonts/mona-sans/Mona-Sans.woff2"
-							]
+							"fontWeight": "100 900",
+							"src": ["file:./assets/fonts/big-shoulders/BigShoulders-VariableFont_opsz,wght.woff2"]
 						}
 					]
 				},
@@ -561,11 +468,20 @@
 				}
 			},
 			"core/navigation": {
+				"color": {
+					"text": "var:preset|color|base"
+				},
 				"typography": {
-					"fontWeight": "500"
+					"fontFamily": "var:preset|font-family|display",
+					"fontWeight": "700",
+					"textTransform": "uppercase",
+					"letterSpacing": "0.05em"
 				},
 				"elements": {
 					"link": {
+						"color": {
+							"text": "var:preset|color|base"
+						},
 						":hover": {
 							"typography": {
 								"textDecoration": "underline"
@@ -795,9 +711,11 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "Oswald, sans-serif",
+					"fontFamily": "var:preset|font-family|display",
 					"fontSize": "var:preset|font-size|small",
-					"fontWeight": "700"
+					"fontWeight": "700",
+					"textTransform": "uppercase",
+					"letterSpacing": "0.05em"
 				},
 				":hover": {
 					"color": {
@@ -812,13 +730,15 @@
 			"h1": {
 				"typography": {
 					"fontSize": "var:preset|font-size|x-large",
-					"lineHeight": "var:custom|line-height|snug"
+					"lineHeight": "var:custom|line-height|snug",
+					"textTransform": "uppercase"
 				}
 			},
 			"h2": {
 				"typography": {
 					"fontSize": "var:preset|font-size|large",
-					"lineHeight": "var:custom|line-height|snug"
+					"lineHeight": "var:custom|line-height|snug",
+					"textTransform": "uppercase"
 				}
 			},
 			"h3": {
@@ -843,9 +763,11 @@
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|primary",
-					"fontWeight": "600",
-					"lineHeight": "var:custom|line-height|body"
+					"fontFamily": "var:preset|font-family|display",
+					"fontWeight": "700",
+					"lineHeight": "var:custom|line-height|tight",
+					"textTransform": "uppercase",
+					"letterSpacing": "0.02em"
 				}
 			},
 			"link": {

@@ -1,18 +1,18 @@
 /*
-Theme Name: Bweib Ollie
-Theme URI: olliewp.com
+Theme Name: The Valley Sports Complex
+Theme URI:
 Author: Ben Weibel
-Author URI: mikemcalister.com
-Description: A fork of the ollie theme by Mike Mcalister
+Author URI:
+Description: Custom theme for The Valley Sports Complex, a 75k sqft sports facility. Based on the Ollie theme by Mike McAlister.
 Tags: blog, portfolio, entertainment, grid-layout, one-column, two-columns, three-columns, four-columns, block-patterns, block-styles, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, full-width-template, rtl-language-support, style-variations, template-editing, theme-options, translation-ready, wide-blocks
 Tested up to: 6.7.1
 Requires PHP: 7.3
-Version: 1.5.2
+Version: 0.1.0
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: ollie
+Text Domain: thevalley
 
-Ollie WordPress Theme, (C) 2025 Mike McAlister.
+Based on Ollie WordPress Theme, (C) 2025 Mike McAlister.
 Ollie is distributed under the terms of the GNU GPL.
 */
 
@@ -22,7 +22,6 @@ Ollie is distributed under the terms of the GNU GPL.
 --screen-small: 40rem;
 --screen-medium: 60rem;
 --screen-large: 80rem;
-
 }
 
 
@@ -149,6 +148,14 @@ label {
 	grid-template-areas: ". main . ";
 
 	background-color: var(--wp--preset--color--main);
+	transition: background-color 0.2s, filter 0.2s;
+	backdrop-filter: none;
+	box-shadow: 0px 69px 19px 0px rgba(20, 17, 31, 0.00), 0px 44px 18px 0px rgba(20, 17, 31, 0.01), 0px 25px 15px 0px rgba(20, 17, 31, 0.03), 0px 11px 11px 0px rgba(20, 17, 31, 0.04), 0px 3px 6px 0px rgba(20, 17, 31, 0.05);
+}
+
+.is-scrolling .site-header {
+	background-color: color-mix(in srgb, currentColor 90%, transparent);
+	backdrop-filter: blur(5px);
 }
 
 .site-header .header-content {
@@ -162,13 +169,13 @@ label {
 	padding-block: calc(var(--wp--preset--spacing--small)/2);
 }
 
-.is-scrolling .header-content .wp-block-site-logo {
-	max-width: 100px;
+.header-content .wp-block-site-logo {
+	max-width: 200px;
+	transition:  0.2s max-width;
 }
 
-
-.wp-block-navigation {
-    /* grid-area: nav; */
+.is-scrolling .header-content .wp-block-site-logo {
+	max-width: 75px;
 }
 
 
@@ -225,95 +232,11 @@ a.more-link {
 * Global Elements 
 */
 
-/* Header */
-
-header.site-header {
-	position: fixed;
-	top: 0;
-	z-index: 100;
-	width: 100%;
-	background: rgba(0,0,0,0.5);
-	backdrop-filter: blur(0px);
-	transition: backdrop-filter 1s ease-out;
-}
-
-.home:not(.is-scrolling) header.site-header {
-	background: transparent;
-	border-bottom: 0;
-}
-
-.is-scrolling header.site-header {
-	backdrop-filter: blur(5px);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
 header:has(>.is-position-sticky) {
 	position: sticky;
 	top: calc( 0px + var( --wp-admin--admin-bar--height, 0px ) );
 	z-index: 100;
 }
-
-.site-header .header-content {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	grid-template-areas: 
-	"cta" 
-	"logo"
-	"nav ";
-	justify-items: center;
-	padding-bottom: var(--wp--preset--spacing--small);	
-}
-
-.is-scrolling .site-header .header-content {
-	grid-template-columns: max-content 1fr;
-	grid-template-rows: auto;
-	grid-template-areas: 
-	"cta cta" 
-	"logo nav";
-}
-
-.site-header .cta-bar {
-	grid-area: cta;
-	justify-self: stretch;
-}
-
-.site-header .wp-block-site-logo {
-	grid-area: logo;
-}
-
-.site-header .wp-block-navigation {
-	grid-area: nav;
-}
-
-/* Mobile */
-@media screen and (max-width: 60rem) {
-	.site-header .wp-block-navigation {
-		justify-self: flex-end;
-		margin-right: 1rem;
-	}	
-
-	.site-header .header-content {
-		grid-template-columns: max-content 1fr;
-		grid-template-rows: auto;
-		grid-template-areas: 
-		"cta cta" 
-		"logo nav";
-	}
-}
-
-
-/* Logo */
-.site-header .wp-block-site-logo {
-	max-width: 350px;
-	transition: max-width .2s;
-}
-
-.is-scrolling .site-header .wp-block-site-logo {
-	max-width: 200px;
-    padding-inline: var(--wp--preset--spacing--medium);
-}
-    
 
 /* Account for admin bar on mobile */
 
